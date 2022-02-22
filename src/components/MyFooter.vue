@@ -184,18 +184,30 @@ export default {
                     margin: 20px 0px;
                     font-size: 16px;
                     cursor: pointer;
+
+                    &:hover {
+                        border: 2px solid $primaryColorHover;
+                    }
                 }
                 .social {
                     display: flex;
                     align-items: center;
                     img {
                         margin: 0px 10px;
+
+                        &:hover {
+                            -webkit-filter: contrast(170%) brightness(3%);
+                        }
                     }
                     a {
                         text-decoration: none;
                         color: $primaryColor;
                         font-weight: bold;
                         margin-right: 5px;
+
+                        &:hover {
+                            color: $primaryColorHover;
+                        }
                     }
                 }
             }
